@@ -18,4 +18,4 @@ while True:
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         print(f"{timestamp} - {name} ({target}) - {status}")
 
-    time.sleep(10
+    time.sleep(10)
