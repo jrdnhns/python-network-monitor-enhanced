@@ -1,9 +1,7 @@
 from datetime import datetime
 import subprocess
 import time
-import csv
 
-targets = ["8.8.8.8", "10.0.0.1", "10.0.0.238"]
 devices = {
     "Google DNS": "8.8.8.8",
     "Cloudflare DNS": "1.1.1.1",
