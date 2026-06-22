@@ -8,18 +8,14 @@ devices = {
     "Default Gateway": "10.0.0.1"
 }
 
-
 while True:
     print("\n-- Network Check --")
 
     for name, target in devices.items():
-        result = subprocess.run(
-            ["ping", "-c", "2", target],
-            stdout=subprocess.DEVNULL
-        )
-    
+        result = subprocess.run(["ping", "-c", "2", target], stdout=subprocess.DEVNULL)
+
         status = "UP" if result.returncode == 0 else "DOWN"
-		timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         print(f"{timestamp} - {name} ({target}) - {status}")
 
-    time.sleep(10)
+    time.sleep(10
