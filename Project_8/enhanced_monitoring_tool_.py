@@ -21,7 +21,7 @@ while True:
         )
     
         status = "UP" if result.returncode == 0 else "DOWN"
-	timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+		timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         print(f"{timestamp} - {name} ({target}) - {status}")
 
     time.sleep(10)
