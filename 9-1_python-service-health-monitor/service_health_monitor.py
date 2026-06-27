@@ -22,7 +22,7 @@ while True:
         
 
         with open(LOG_FILE, "a") as log:
-        log.write(message + "\n")
+            log.write(message + "\n")
 
 
 
