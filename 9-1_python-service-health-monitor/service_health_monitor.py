@@ -19,7 +19,7 @@ while True:
         status = "UP" if result.returncode == 0 else "DOWN"
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         message = f"{timestamp} - {name} ({target}) - {status}"
-		print(message)
+	    print(message)
 
 	with open(LOG_FILE, "a") as log:
     log.write(message + "\n")
